@@ -1,0 +1,22 @@
+// Copyright INLab, Dongguk Univ.
+
+syntax = "proto3";
+
+package validator;
+
+option go_package = "github.com/docbull/inlab-ethereum-hp2p/auditchain/verification/proto/";
+
+// AuditChainInfo message 
+message AuditChainInfo {
+    repeated Auditor Auditors = 1;
+}
+
+message Auditor {
+    uint32 ID = 1;
+    string IP = 2;
+}
+
+// PublicKey indicates the public keys of the audit nodes
+message PublicKey {
+    repeated string PublicKeys = 1;
+}
