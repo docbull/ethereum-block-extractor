@@ -5,7 +5,7 @@ import (
 	"io"
 	"net"
 
-	auditchain "github.com/docbull/ethaudit/auditchain/proto"
+	extractor "github.com/docbull/ethereum-block-extractor/extractor/proto"
 	proto "github.com/golang/protobuf/proto"
 )
 
@@ -28,29 +28,30 @@ func ReceiveBlockInfo(conn net.Conn) {
 		length += n
 	}
 
-	auditBlock := &auditchain.BlockInfo{}
-	err := proto.Unmarshal(data[:length], auditBlock)
+	block := &extractor.BlockInfo{}
+	err := proto.Unmarshal(data[:length], block)
 	if err != nil {
 		fmt.Println(err)
 		conn.Write([]byte("error"))
 		return
 	}
-	fmt.Println("difficulty:", auditBlock.Difficulty)
-	fmt.Println("extraData:", auditBlock.Extra)
-	fmt.Println("gasLimit:", auditBlock.GasLimit)
-	fmt.Println("gasUsed:", auditBlock.GasUsed)
-	fmt.Println("hash:", auditBlock.TxHash)
-	fmt.Println("logsBloom:", auditBlock.Bloom)
-	fmt.Println("miner:", auditBlock.Coinbase)
-	fmt.Println("mixHash:", auditBlock.MixDigest)
-	fmt.Println("nonce:", auditBlock.Nonce)
-	fmt.Println("number:", auditBlock.Number)
-	fmt.Println("parentHash:", auditBlock.ParentHash)
-	fmt.Println("receiptsRoot:", auditBlock.ReceiptHash)
-	fmt.Println("sha3Uncles:", auditBlock.UncleHash)
-	fmt.Println("stateRoot:", auditBlock.Root)
-	fmt.Println("timestamp:", auditBlock.Time)
-	fmt.Println("transactionRoot:", auditBlock.TxHash)
+
+	fmt.Println("difficulty:", block.Difficulty)
+	fmt.Println("extraData:", block.Extra)
+	fmt.Println("gasLimit:", block.GasLimit)
+	fmt.Println("gasUsed:", block.GasUsed)
+	fmt.Println("hash:", block.TxHash)
+	fmt.Println("logsBloom:", block.Bloom)
+	fmt.Println("miner:", block.Coinbase)
+	fmt.Println("mixHash:", block.MixDigest)
+	fmt.Println("nonce:", block.Nonce)
+	fmt.Println("number:", block.Number)
+	fmt.Println("parentHash:", block.ParentHash)
+	fmt.Println("receiptsRoot:", block.ReceiptHash)
+	fmt.Println("sha3Uncles:", block.UncleHash)
+	fmt.Println("stateRoot:", block.Root)
+	fmt.Println("timestamp:", block.Time)
+	fmt.Println("transactionRoot:", block.TxHash)
 }
 
 func Start2Listen() {
@@ -61,7 +62,7 @@ func Start2Listen() {
 	}
 	defer lis.Close()
 
-	fmt.Println("Auditchain ...")
+	fmt.Println("Ethereum Block Extractor ...")
 	for {
 		conn, err := lis.Accept()
 		fmt.Println("SOME PEER CONNECTED!")
