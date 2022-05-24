@@ -1,11 +1,12 @@
 package main
 
 import (
+	"encoding/hex"
 	"fmt"
 	"io"
 	"net"
 
-	extractor "github.com/docbull/ethereum-block-extractor/extractor/proto"
+	extractor "github.com/docbull/ethereum-block-extractor/proto"
 	proto "github.com/golang/protobuf/proto"
 )
 
@@ -37,21 +38,21 @@ func ReceiveBlockInfo(conn net.Conn) {
 	}
 
 	fmt.Println("difficulty:", block.Difficulty)
-	fmt.Println("extraData:", block.Extra)
+	fmt.Println("extraData:", hex.EncodeToString(block.Extra))
 	fmt.Println("gasLimit:", block.GasLimit)
 	fmt.Println("gasUsed:", block.GasUsed)
-	fmt.Println("hash:", block.TxHash)
-	fmt.Println("logsBloom:", block.Bloom)
-	fmt.Println("miner:", block.Coinbase)
-	fmt.Println("mixHash:", block.MixDigest)
+	fmt.Println("hash:", hex.EncodeToString(block.TxHash))
+	fmt.Println("logsBloom:", hex.EncodeToString(block.Bloom))
+	fmt.Println("miner:", hex.EncodeToString(block.Coinbase))
+	fmt.Println("mixHash:", hex.EncodeToString(block.MixDigest))
 	fmt.Println("nonce:", block.Nonce)
 	fmt.Println("number:", block.Number)
-	fmt.Println("parentHash:", block.ParentHash)
-	fmt.Println("receiptsRoot:", block.ReceiptHash)
-	fmt.Println("sha3Uncles:", block.UncleHash)
-	fmt.Println("stateRoot:", block.Root)
+	fmt.Println("parentHash:", hex.EncodeToString(block.ParentHash))
+	fmt.Println("receiptsRoot:", hex.EncodeToString(block.ReceiptHash))
+	fmt.Println("sha3Uncles:", hex.EncodeToString(block.UncleHash))
+	fmt.Println("stateRoot:", hex.EncodeToString(block.Root))
 	fmt.Println("timestamp:", block.Time)
-	fmt.Println("transactionRoot:", block.TxHash)
+	fmt.Println("transactionRoot:", hex.EncodeToString(block.TxHash))
 }
 
 func Start2Listen() {
@@ -62,10 +63,10 @@ func Start2Listen() {
 	}
 	defer lis.Close()
 
-	fmt.Println("Ethereum Block Extractor ...")
+	fmt.Println("🚀 Ethereum Block Extractor ...")
 	for {
 		conn, err := lis.Accept()
-		fmt.Println("SOME PEER CONNECTED!")
+		fmt.Println("🎁 New Block Arrived!")
 		if err != nil {
 			fmt.Println(err)
 			return
