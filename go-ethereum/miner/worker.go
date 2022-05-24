@@ -783,10 +783,6 @@ func forwardBlock(block *types.Block) {
 		MixDigest: 	 block.MixDigest().Bytes(),
 		Nonce: 		 block.Nonce(),
 	}
-	// docbull
-	log.Info("🌓", "ParentHash", block.ParentHash(), "parentHash", hex.EncodeToString(extractedBlock.ParentHash[:]));
-	log.Info("🌕", "ParentHash", block.ParentHash().String())
-	// log.Info("parentHash", "parentHash", string(extractedBlock.ParentHash[:]))
 
 	marshalledBlock, err := proto.Marshal(extractedBlock)
 	if err != nil {
