@@ -1,0 +1,229 @@
+INFO [05-23|19:35:36.319] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-23|19:35:36.319] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-23|19:35:36.319] Set global gas cap                       cap=50,000,000
+INFO [05-23|19:35:36.319] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-23|19:35:36.319] Allocated cache and file handles         database=/home/inlab/ethereum-block-extractor/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-23|19:35:36.337] Opened ancient database                  database=/home/inlab/ethereum-block-extractor/data/geth/chaindata/ancient readonly=false
+INFO [05-23|19:35:36.337] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil>, London: <nil>, Arrow Glacier: <nil>, MergeFork: <nil>, Terminal TD: <nil>, Engine: ethash}"
+INFO [05-23|19:35:36.338] Disk storage enabled for ethash caches   dir=/home/inlab/ethereum-block-extractor/data/geth/ethash count=3
+INFO [05-23|19:35:36.338] Disk storage enabled for ethash DAGs     dir=/home/inlab/.ethash count=2
+INFO [05-23|19:35:36.338] Initialising Ethereum protocol           network=15 dbversion=8
+INFO [05-23|19:35:36.340] Loaded most recent local header          number=5702 hash=7bc4e5..822930 td=2,565,070,177 age=1m21s
+INFO [05-23|19:35:36.340] Loaded most recent local full block      number=5702 hash=7bc4e5..822930 td=2,565,070,177 age=1m21s
+INFO [05-23|19:35:36.340] Loaded most recent local fast block      number=5702 hash=7bc4e5..822930 td=2,565,070,177 age=1m21s
+INFO [05-23|19:35:36.342] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-23|19:35:36.342] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-23|19:35:36.342] Switch sync mode from snap sync to full sync 
+INFO [05-23|19:35:36.342] Gasprice oracle is ignoring threshold set threshold=2
+INFO [05-23|19:35:36.343] Starting peer-to-peer node               instance=Geth/v1.10.18-unstable/linux-amd64/go1.18.1
+INFO [05-23|19:35:36.406] New local node record                    seq=1,638,978,862,847 id=c9c9d633a30a4689 ip=127.0.0.1 udp=30331 tcp=30331
+INFO [05-23|19:35:36.406] Started P2P networking                   self=enode://70d90f64cdf236d2e20475186bdbe8c2f4633078a49f4101f9c720034a2e0a89df3be37b78f7937f12d4701f9f3891f80d7fc2d4a01cf1b21493f16e7de424c8@127.0.0.1:30331
+INFO [05-23|19:35:36.407] IPC endpoint opened                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-23|19:35:36.407] Transaction pool price threshold updated price=0
+INFO [05-23|19:35:36.407] Updated mining threads                   threads=1
+INFO [05-23|19:35:36.407] Transaction pool price threshold updated price=1,000,000,000
+INFO [05-23|19:35:36.407] Etherbase automatically configured       address=0x6E5b099C37142690BC5BF1d90B7B0D86a333eb62
+INFO [05-23|19:35:36.407] Commit new sealing work                  number=5703 sealhash=760c07..6b135a uncles=0 txs=0 gas=0 fees=0 elapsed="99.647µs"
+INFO [05-23|19:35:36.407] Commit new sealing work                  number=5703 sealhash=760c07..6b135a uncles=0 txs=0 gas=0 fees=0 elapsed="179.152µs"
+INFO [05-23|19:35:36.774] Successfully sealed new block            number=5703 sealhash=760c07..6b135a hash=2a3d89..4f5e13 elapsed=366.572ms
+INFO [05-23|19:35:36.774] Commit new sealing work                  number=5704 sealhash=e4a42b..7b9927 uncles=0 txs=0 gas=0 fees=0 elapsed="122.973µs"
+INFO [05-23|19:35:36.774] Commit new sealing work                  number=5704 sealhash=e4a42b..7b9927 uncles=0 txs=0 gas=0 fees=0 elapsed="214.899µs"
+INFO [05-23|19:35:36.774] 🌓                                        ParentHash=7bc4e5..822930 parentHash="{\xc4\xe5\x1dŪ\xfd\xf2\xaex\x93\xcc\xce\xf9\x01c\xa0\xc7`\x86v#\xe8\xf9\xb9*:z/\x82)0"
+INFO [05-23|19:35:36.774] 🌕                                        ParentHash=0x7bc4e51dc5aafdf2ae7893cccef90163a0c760867623e8f9b92a3a7a2f822930
+INFO [05-23|19:35:36.774] 📤 Forwarding block to extractor 
+INFO [05-23|19:35:36.774] 🔨 mined potential block                  number=5703 hash=2a3d89..4f5e13
+INFO [05-23|19:35:39.749] New local node record                    seq=1,638,978,862,848 id=c9c9d633a30a4689 ip=203.247.240.228 udp=30331 tcp=30331
+INFO [05-23|19:35:42.455] Successfully sealed new block            number=5704 sealhash=e4a42b..7b9927 hash=417e68..2680fb elapsed=5.680s
+INFO [05-23|19:35:42.455] Commit new sealing work                  number=5705 sealhash=df37ab..d02757 uncles=0 txs=0 gas=0 fees=0 elapsed="94.018µs"
+INFO [05-23|19:35:42.455] 🌓                                        ParentHash=2a3d89..4f5e13 parentHash="*=\x89\xfce\x1aj\xcd\x14<B \x80\x86\xcf\xf3\x83\xcf\xc9:o\x1d\v\xc5Y\x9c9Q\"O^\x13"
+INFO [05-23|19:35:42.455] 🌕                                        ParentHash=0x2a3d89fc651a6acd143c42208086cff383cfc93a6f1d0bc5599c3951224f5e13
+INFO [05-23|19:35:42.455] 📤 Forwarding block to extractor 
+INFO [05-23|19:35:42.455] 🔨 mined potential block                  number=5704 hash=417e68..2680fb
+INFO [05-23|19:35:42.455] Commit new sealing work                  number=5705 sealhash=df37ab..d02757 uncles=0 txs=0 gas=0 fees=0 elapsed="185.215µs"
+INFO [05-23|19:35:43.214] IPC endpoint closed                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-23|19:35:43.214] Ethereum protocol stopped 
+INFO [05-23|19:35:43.214] Transaction pool stopped 
+INFO [05-23|19:35:43.215] Writing cached state to disk             block=5704 hash=417e68..2680fb root=d4687e..51312d
+INFO [05-23|19:35:43.215] Persisted trie from memory database      nodes=2 size=263.00B time="33.262µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=263.00B
+INFO [05-23|19:35:43.215] Writing cached state to disk             block=5703 hash=2a3d89..4f5e13 root=119b48..a3cafc
+INFO [05-23|19:35:43.215] Persisted trie from memory database      nodes=2 size=263.00B time="14.637µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:35:43.215] Writing cached state to disk             block=5577 hash=dadced..f57d0f root=f34a48..71878e
+INFO [05-23|19:35:43.215] Persisted trie from memory database      nodes=0 size=0.00B   time=736ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:35:43.215] Writing snapshot state to disk           root=9d3d44..3f30c2
+INFO [05-23|19:35:43.215] Persisted trie from memory database      nodes=0 size=0.00B   time=380ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:35:43.215] Writing clean trie cache to disk         path=/home/inlab/ethereum-block-extractor/data/geth/triecache threads=8
+INFO [05-23|19:35:43.217] Persisted the clean trie cache           path=/home/inlab/ethereum-block-extractor/data/geth/triecache elapsed=1.620ms
+INFO [05-23|19:35:43.217] Blockchain stopped 
+INFO [05-23|19:36:08.782] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-23|19:36:08.783] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-23|19:36:08.783] Set global gas cap                       cap=50,000,000
+INFO [05-23|19:36:08.783] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-23|19:36:08.783] Allocated cache and file handles         database=/home/inlab/ethereum-block-extractor/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-23|19:36:08.803] Opened ancient database                  database=/home/inlab/ethereum-block-extractor/data/geth/chaindata/ancient readonly=false
+INFO [05-23|19:36:08.805] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil>, London: <nil>, Arrow Glacier: <nil>, MergeFork: <nil>, Terminal TD: <nil>, Engine: ethash}"
+INFO [05-23|19:36:08.806] Disk storage enabled for ethash caches   dir=/home/inlab/ethereum-block-extractor/data/geth/ethash count=3
+INFO [05-23|19:36:08.806] Disk storage enabled for ethash DAGs     dir=/home/inlab/.ethash count=2
+INFO [05-23|19:36:08.806] Initialising Ethereum protocol           network=15 dbversion=8
+INFO [05-23|19:36:08.810] Loaded most recent local header          number=5704 hash=417e68..2680fb td=2,566,070,375 age=31s
+INFO [05-23|19:36:08.810] Loaded most recent local full block      number=5704 hash=417e68..2680fb td=2,566,070,375 age=31s
+INFO [05-23|19:36:08.810] Loaded most recent local fast block      number=5704 hash=417e68..2680fb td=2,566,070,375 age=31s
+INFO [05-23|19:36:08.813] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-23|19:36:08.813] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-23|19:36:08.813] Switch sync mode from snap sync to full sync 
+INFO [05-23|19:36:08.813] Gasprice oracle is ignoring threshold set threshold=2
+INFO [05-23|19:36:08.813] Starting peer-to-peer node               instance=Geth/v1.10.18-unstable/linux-amd64/go1.18.1
+INFO [05-23|19:36:08.870] New local node record                    seq=1,638,978,862,849 id=c9c9d633a30a4689 ip=127.0.0.1 udp=30331 tcp=30331
+INFO [05-23|19:36:08.870] Started P2P networking                   self=enode://70d90f64cdf236d2e20475186bdbe8c2f4633078a49f4101f9c720034a2e0a89df3be37b78f7937f12d4701f9f3891f80d7fc2d4a01cf1b21493f16e7de424c8@127.0.0.1:30331
+INFO [05-23|19:36:08.870] IPC endpoint opened                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-23|19:36:08.870] Transaction pool price threshold updated price=0
+INFO [05-23|19:36:08.870] Updated mining threads                   threads=1
+INFO [05-23|19:36:08.870] Transaction pool price threshold updated price=1,000,000,000
+INFO [05-23|19:36:08.870] Etherbase automatically configured       address=0x6E5b099C37142690BC5BF1d90B7B0D86a333eb62
+INFO [05-23|19:36:08.871] Commit new sealing work                  number=5705 sealhash=1b580c..748cc3 uncles=0 txs=0 gas=0 fees=0 elapsed="98.554µs"
+INFO [05-23|19:36:08.871] Commit new sealing work                  number=5705 sealhash=1b580c..748cc3 uncles=0 txs=0 gas=0 fees=0 elapsed="184.841µs"
+INFO [05-23|19:36:13.956] New local node record                    seq=1,638,978,862,850 id=c9c9d633a30a4689 ip=203.247.240.228 udp=30331 tcp=30331
+WARN [05-23|19:36:17.950] Snapshot extension registration failed   peer=2b236036 err="peer connected on snap without compatible eth support"
+INFO [05-23|19:36:18.447] Successfully sealed new block            number=5705 sealhash=1b580c..748cc3 hash=713560..6115c7 elapsed=9.576s
+INFO [05-23|19:36:18.447] Commit new sealing work                  number=5706 sealhash=1179a8..5dfa08 uncles=0 txs=0 gas=0 fees=0 elapsed="78.961µs"
+INFO [05-23|19:36:18.447] Commit new sealing work                  number=5706 sealhash=1179a8..5dfa08 uncles=0 txs=0 gas=0 fees=0 elapsed="136.389µs"
+INFO [05-23|19:36:18.447] 🌓                                        ParentHash=417e68..2680fb parentHash=417e68c18a796fe40ccb28161533abca38a3c736d693bdba78a29e78742680fb
+INFO [05-23|19:36:18.447] 🌕                                        ParentHash=0x417e68c18a796fe40ccb28161533abca38a3c736d693bdba78a29e78742680fb
+INFO [05-23|19:36:18.447] 📤 Forwarding block to extractor 
+INFO [05-23|19:36:18.447] 🔨 mined potential block                  number=5705 hash=713560..6115c7
+INFO [05-23|19:36:23.287] IPC endpoint closed                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-23|19:36:23.287] Ethereum protocol stopped 
+INFO [05-23|19:36:23.287] Transaction pool stopped 
+INFO [05-23|19:36:23.287] Writing cached state to disk             block=5705 hash=713560..6115c7 root=1ce7ba..5f8332
+INFO [05-23|19:36:23.287] Persisted trie from memory database      nodes=2 size=263.00B time="18.275µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:36:23.287] Writing cached state to disk             block=5704 hash=417e68..2680fb root=d4687e..51312d
+INFO [05-23|19:36:23.287] Persisted trie from memory database      nodes=0 size=0.00B   time=645ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:36:23.288] Writing cached state to disk             block=5578 hash=1856f5..b338b4 root=70a9c7..234cd3
+INFO [05-23|19:36:23.288] Persisted trie from memory database      nodes=0 size=0.00B   time=660ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:36:23.288] Writing snapshot state to disk           root=9d3d44..3f30c2
+INFO [05-23|19:36:23.288] Persisted trie from memory database      nodes=0 size=0.00B   time=426ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-23|19:36:23.288] Writing clean trie cache to disk         path=/home/inlab/ethereum-block-extractor/data/geth/triecache threads=8
+INFO [05-23|19:36:23.289] Persisted the clean trie cache           path=/home/inlab/ethereum-block-extractor/data/geth/triecache elapsed=1.419ms
+INFO [05-23|19:36:23.289] Blockchain stopped 
+INFO [05-24|10:53:50.545] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-24|10:53:50.545] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-24|10:53:50.545] Set global gas cap                       cap=50,000,000
+INFO [05-24|10:53:50.545] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-24|10:53:50.545] Allocated cache and file handles         database=/home/inlab/ethereum-block-extractor/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-24|10:53:50.564] Opened ancient database                  database=/home/inlab/ethereum-block-extractor/data/geth/chaindata/ancient readonly=false
+INFO [05-24|10:53:50.564] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil>, London: <nil>, Arrow Glacier: <nil>, MergeFork: <nil>, Terminal TD: <nil>, Engine: ethash}"
+INFO [05-24|10:53:50.565] Disk storage enabled for ethash caches   dir=/home/inlab/ethereum-block-extractor/data/geth/ethash count=3
+INFO [05-24|10:53:50.565] Disk storage enabled for ethash DAGs     dir=/home/inlab/.ethash count=2
+INFO [05-24|10:53:50.565] Initialising Ethereum protocol           network=15 dbversion=8
+INFO [05-24|10:53:50.567] Loaded most recent local header          number=5705 hash=713560..6115c7 td=2,566,570,108 age=15h17m42s
+INFO [05-24|10:53:50.567] Loaded most recent local full block      number=5705 hash=713560..6115c7 td=2,566,570,108 age=15h17m42s
+INFO [05-24|10:53:50.567] Loaded most recent local fast block      number=5705 hash=713560..6115c7 td=2,566,570,108 age=15h17m42s
+INFO [05-24|10:53:50.569] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-24|10:53:50.569] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-24|10:53:50.569] Switch sync mode from snap sync to full sync 
+INFO [05-24|10:53:50.569] Gasprice oracle is ignoring threshold set threshold=2
+INFO [05-24|10:53:50.570] Starting peer-to-peer node               instance=Geth/v1.10.18-unstable/linux-amd64/go1.18.1
+INFO [05-24|10:53:50.657] New local node record                    seq=1,638,978,862,851 id=c9c9d633a30a4689 ip=127.0.0.1 udp=30331 tcp=30331
+INFO [05-24|10:53:50.658] Started P2P networking                   self=enode://70d90f64cdf236d2e20475186bdbe8c2f4633078a49f4101f9c720034a2e0a89df3be37b78f7937f12d4701f9f3891f80d7fc2d4a01cf1b21493f16e7de424c8@127.0.0.1:30331
+INFO [05-24|10:53:50.658] IPC endpoint opened                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-24|10:53:50.658] Transaction pool price threshold updated price=0
+INFO [05-24|10:53:50.658] Updated mining threads                   threads=1
+INFO [05-24|10:53:50.658] Transaction pool price threshold updated price=1,000,000,000
+INFO [05-24|10:53:50.658] Etherbase automatically configured       address=0x6E5b099C37142690BC5BF1d90B7B0D86a333eb62
+INFO [05-24|10:53:50.658] Commit new sealing work                  number=5706 sealhash=a7d005..502077 uncles=0 txs=0 gas=0 fees=0 elapsed="108.988µs"
+INFO [05-24|10:53:50.659] Commit new sealing work                  number=5706 sealhash=a7d005..502077 uncles=0 txs=0 gas=0 fees=0 elapsed="192.6µs"
+INFO [05-24|10:53:51.161] Successfully sealed new block            number=5706 sealhash=a7d005..502077 hash=c080a6..e07f55 elapsed=502.729ms
+INFO [05-24|10:53:51.161] Commit new sealing work                  number=5707 sealhash=d9025c..0e0344 uncles=0 txs=0 gas=0 fees=0 elapsed="106.786µs"
+INFO [05-24|10:53:51.162] Commit new sealing work                  number=5707 sealhash=d9025c..0e0344 uncles=0 txs=0 gas=0 fees=0 elapsed="310.256µs"
+INFO [05-24|10:53:51.162] 🌓                                        ParentHash=713560..6115c7 parentHash=713560cee99306045be1a0db5dd68bd836f61d56fb499bfa121d0e24446115c7
+INFO [05-24|10:53:51.162] 🌕                                        ParentHash=0x713560cee99306045be1a0db5dd68bd836f61d56fb499bfa121d0e24446115c7
+INFO [05-24|10:53:51.162] 📤 Forwarding block to extractor 
+INFO [05-24|10:53:51.162] 🔨 mined potential block                  number=5706 hash=c080a6..e07f55
+INFO [05-24|10:53:52.616] Successfully sealed new block            number=5707 sealhash=d9025c..0e0344 hash=57d32b..3a94e1 elapsed=1.454s
+INFO [05-24|10:53:52.616] Commit new sealing work                  number=5708 sealhash=37216c..2436ac uncles=0 txs=0 gas=0 fees=0 elapsed="99.502µs"
+INFO [05-24|10:53:52.616] 🌓                                        ParentHash=c080a6..e07f55 parentHash=c080a61d22525d841f81e55c1e0ba05ca5606f9d901981057f4c78718ce07f55
+INFO [05-24|10:53:52.616] 🌕                                        ParentHash=0xc080a61d22525d841f81e55c1e0ba05ca5606f9d901981057f4c78718ce07f55
+INFO [05-24|10:53:52.616] Commit new sealing work                  number=5708 sealhash=37216c..2436ac uncles=0 txs=0 gas=0 fees=0 elapsed="180.352µs"
+INFO [05-24|10:53:52.616] 📤 Forwarding block to extractor 
+INFO [05-24|10:53:52.616] 🔨 mined potential block                  number=5707 hash=57d32b..3a94e1
+INFO [05-24|10:53:57.030] New local node record                    seq=1,638,978,862,852 id=c9c9d633a30a4689 ip=127.0.0.1 udp=30331 tcp=30331
+INFO [05-24|10:53:57.125] Successfully sealed new block            number=5708 sealhash=37216c..2436ac hash=f82f26..0f49b0 elapsed=4.508s
+INFO [05-24|10:53:57.125] Commit new sealing work                  number=5709 sealhash=616c0d..245946 uncles=0 txs=0 gas=0 fees=0 elapsed="122.2µs"
+INFO [05-24|10:53:57.125] Commit new sealing work                  number=5709 sealhash=616c0d..245946 uncles=0 txs=0 gas=0 fees=0 elapsed="201.465µs"
+INFO [05-24|10:53:57.125] 🌓                                        ParentHash=57d32b..3a94e1 parentHash=57d32b3582642a17818ec012e253211cb59853e325f5925db2fd618e5e3a94e1
+INFO [05-24|10:53:57.125] 🌕                                        ParentHash=0x57d32b3582642a17818ec012e253211cb59853e325f5925db2fd618e5e3a94e1
+INFO [05-24|10:53:57.125] 📤 Forwarding block to extractor 
+INFO [05-24|10:53:57.125] 🔨 mined potential block                  number=5708 hash=f82f26..0f49b0
+INFO [05-24|10:53:57.179] New local node record                    seq=1,638,978,862,853 id=c9c9d633a30a4689 ip=203.247.240.228 udp=30331 tcp=30331
+INFO [05-24|10:53:59.505] IPC endpoint closed                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-24|10:53:59.505] Ethereum protocol stopped 
+INFO [05-24|10:53:59.505] Transaction pool stopped 
+INFO [05-24|10:53:59.506] Writing cached state to disk             block=5708 hash=f82f26..0f49b0 root=da2719..1407aa
+INFO [05-24|10:53:59.506] Persisted trie from memory database      nodes=2 size=263.00B time="30.149µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=5 livesize=526.00B
+INFO [05-24|10:53:59.506] Writing cached state to disk             block=5707 hash=57d32b..3a94e1 root=3bfad2..e0c1ec
+INFO [05-24|10:53:59.506] Persisted trie from memory database      nodes=2 size=263.00B time="27.14µs"  gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=263.00B
+INFO [05-24|10:53:59.506] Writing cached state to disk             block=5581 hash=83791b..e0ea60 root=8c89cc..4acecc
+INFO [05-24|10:53:59.506] Persisted trie from memory database      nodes=0 size=0.00B   time=743ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=263.00B
+INFO [05-24|10:53:59.506] Writing snapshot state to disk           root=9d3d44..3f30c2
+INFO [05-24|10:53:59.506] Persisted trie from memory database      nodes=0 size=0.00B   time=360ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=263.00B
+INFO [05-24|10:53:59.506] Writing clean trie cache to disk         path=/home/inlab/ethereum-block-extractor/data/geth/triecache threads=8
+INFO [05-24|10:53:59.507] Persisted the clean trie cache           path=/home/inlab/ethereum-block-extractor/data/geth/triecache elapsed=1.562ms
+INFO [05-24|10:53:59.507] Blockchain stopped 
+INFO [05-24|10:56:01.401] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-24|10:56:01.401] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-24|10:56:01.402] Set global gas cap                       cap=50,000,000
+INFO [05-24|10:56:01.402] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-24|10:56:01.402] Allocated cache and file handles         database=/home/inlab/ethereum-block-extractor/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-24|10:56:01.422] Opened ancient database                  database=/home/inlab/ethereum-block-extractor/data/geth/chaindata/ancient readonly=false
+INFO [05-24|10:56:01.425] Initialised chain configuration          config="{ChainID: 15 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil>, London: <nil>, Arrow Glacier: <nil>, MergeFork: <nil>, Terminal TD: <nil>, Engine: ethash}"
+INFO [05-24|10:56:01.426] Disk storage enabled for ethash caches   dir=/home/inlab/ethereum-block-extractor/data/geth/ethash count=3
+INFO [05-24|10:56:01.426] Disk storage enabled for ethash DAGs     dir=/home/inlab/.ethash count=2
+INFO [05-24|10:56:01.426] Initialising Ethereum protocol           network=15 dbversion=8
+INFO [05-24|10:56:01.429] Loaded most recent local header          number=5708 hash=f82f26..0f49b0 td=2,567,997,535 age=2m9s
+INFO [05-24|10:56:01.429] Loaded most recent local full block      number=5708 hash=f82f26..0f49b0 td=2,567,997,535 age=2m9s
+INFO [05-24|10:56:01.429] Loaded most recent local fast block      number=5708 hash=f82f26..0f49b0 td=2,567,997,535 age=2m9s
+INFO [05-24|10:56:01.431] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-24|10:56:01.432] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-24|10:56:01.432] Switch sync mode from snap sync to full sync 
+INFO [05-24|10:56:01.432] Gasprice oracle is ignoring threshold set threshold=2
+INFO [05-24|10:56:01.432] Starting peer-to-peer node               instance=Geth/v1.10.18-unstable/linux-amd64/go1.18.1
+INFO [05-24|10:56:01.488] New local node record                    seq=1,638,978,862,854 id=c9c9d633a30a4689 ip=127.0.0.1 udp=30331 tcp=30331
+INFO [05-24|10:56:01.488] Started P2P networking                   self=enode://70d90f64cdf236d2e20475186bdbe8c2f4633078a49f4101f9c720034a2e0a89df3be37b78f7937f12d4701f9f3891f80d7fc2d4a01cf1b21493f16e7de424c8@127.0.0.1:30331
+INFO [05-24|10:56:01.489] IPC endpoint opened                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-24|10:56:01.489] Transaction pool price threshold updated price=0
+INFO [05-24|10:56:01.489] Updated mining threads                   threads=1
+INFO [05-24|10:56:01.489] Transaction pool price threshold updated price=1,000,000,000
+INFO [05-24|10:56:01.489] Etherbase automatically configured       address=0x6E5b099C37142690BC5BF1d90B7B0D86a333eb62
+INFO [05-24|10:56:01.489] Commit new sealing work                  number=5709 sealhash=e6df78..7413af uncles=0 txs=0 gas=0 fees=0 elapsed="97.735µs"
+INFO [05-24|10:56:01.489] Commit new sealing work                  number=5709 sealhash=e6df78..7413af uncles=0 txs=0 gas=0 fees=0 elapsed="183.416µs"
+INFO [05-24|10:56:06.551] New local node record                    seq=1,638,978,862,855 id=c9c9d633a30a4689 ip=203.247.240.228 udp=30331 tcp=30331
+INFO [05-24|10:56:14.526] Successfully sealed new block            number=5709 sealhash=e6df78..7413af hash=920009..27f3e5 elapsed=13.036s
+INFO [05-24|10:56:14.526] Commit new sealing work                  number=5710 sealhash=d560ad..1450bb uncles=0 txs=0 gas=0 fees=0 elapsed="119.761µs"
+INFO [05-24|10:56:14.526] Commit new sealing work                  number=5710 sealhash=d560ad..1450bb uncles=0 txs=0 gas=0 fees=0 elapsed="192.061µs"
+INFO [05-24|10:56:14.526] 🌓                                        ParentHash=f82f26..0f49b0 parentHash=f82f26bde071369b4b2c5ac3f4dc2ca3e3b3181f3c644f32def31e9d010f49b0
+INFO [05-24|10:56:14.526] 🌕                                        ParentHash=0xf82f26bde071369b4b2c5ac3f4dc2ca3e3b3181f3c644f32def31e9d010f49b0
+INFO [05-24|10:56:14.526] 📤 Forwarding block to extractor 
+INFO [05-24|10:56:14.526] 🔨 mined potential block                  number=5709 hash=920009..27f3e5
+INFO [05-24|10:56:14.740] Looking for peers                        peercount=0 tried=106 static=0
+INFO [05-24|10:56:16.949] Successfully sealed new block            number=5710 sealhash=d560ad..1450bb hash=4f9d8e..4c78f1 elapsed=2.422s
+INFO [05-24|10:56:16.949] Commit new sealing work                  number=5711 sealhash=7a4691..ad5b19 uncles=0 txs=0 gas=0 fees=0 elapsed="115.469µs"
+INFO [05-24|10:56:16.949] Commit new sealing work                  number=5711 sealhash=7a4691..ad5b19 uncles=0 txs=0 gas=0 fees=0 elapsed="195.384µs"
+INFO [05-24|10:56:16.949] 🌓                                        ParentHash=920009..27f3e5 parentHash=920009188a0e5fb4e35c6a60ef2e31853e4ad8ae19810e6d64cc96924827f3e5
+INFO [05-24|10:56:16.949] 🌕                                        ParentHash=0x920009188a0e5fb4e35c6a60ef2e31853e4ad8ae19810e6d64cc96924827f3e5
+INFO [05-24|10:56:16.949] 📤 Forwarding block to extractor 
+INFO [05-24|10:56:16.949] 🔨 mined potential block                  number=5710 hash=4f9d8e..4c78f1
+WARN [05-24|10:56:18.152] Snapshot extension registration failed   peer=7a77d37c err="peer connected on snap without compatible eth support"
+INFO [05-24|10:56:29.492] IPC endpoint closed                      url=/home/inlab/ethereum-block-extractor/data/geth.ipc
+INFO [05-24|10:56:29.492] Ethereum protocol stopped 
+INFO [05-24|10:56:29.492] Transaction pool stopped 
+INFO [05-24|10:56:29.493] Writing cached state to disk             block=5710 hash=4f9d8e..4c78f1 root=c0f2f8..76871d
+INFO [05-24|10:56:29.493] Persisted trie from memory database      nodes=2 size=263.00B time="19.648µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=263.00B
+INFO [05-24|10:56:29.493] Writing cached state to disk             block=5709 hash=920009..27f3e5 root=e2c902..3dc700
+INFO [05-24|10:56:29.493] Persisted trie from memory database      nodes=2 size=263.00B time="10.721µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-24|10:56:29.493] Writing cached state to disk             block=5583 hash=697f45..46739f root=fe4065..56b336
+INFO [05-24|10:56:29.493] Persisted trie from memory database      nodes=0 size=0.00B   time=760ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-24|10:56:29.493] Writing snapshot state to disk           root=9d3d44..3f30c2
+INFO [05-24|10:56:29.493] Persisted trie from memory database      nodes=0 size=0.00B   time=352ns      gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [05-24|10:56:29.493] Writing clean trie cache to disk         path=/home/inlab/ethereum-block-extractor/data/geth/triecache threads=8
+INFO [05-24|10:56:29.495] Persisted the clean trie cache           path=/home/inlab/ethereum-block-extractor/data/geth/triecache elapsed=1.391ms
+INFO [05-24|10:56:29.495] Blockchain stopped 
+INFO [05-24|10:56:29.741] Looking for peers                        peercount=0 tried=133 static=0

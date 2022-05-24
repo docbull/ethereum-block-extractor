@@ -1,0 +1,50 @@
+
+eth.blockNumber
+admin.nodeInfo.enode
+eth.blockNumber
+admin.nodeInfo.enode
+blockinfo
+blockInfo
+var blockNumber;
+var blockInfo;
+web3.eth.getBlockNumber(function(e, r) { blockNumber = r; });
+blockNumber;
+web3.eth.getBlock(blockNumber, function(e, r) { blockInfo = r; });
+blockInfo
+var blockNumber;
+var blockInfo;
+web3.eth.getBlockNumber(function(e, r) { blockNumber = r; });
+blockNumber;
+web3.eth.getBlock(blockNumber, function(e, r) { blockInfo = r; });
+blockInfo
+clear
+var blockNumber;
+var blockInfo;
+web3.eth.getBlockNumber(function(e, r) { blockNumber = r; });
+blockNumber;
+web3.eth.getBlock(blockNumber, function(e, r) { blockInfo = r; });
+blockInfo
+admin.nodeInfo.enode
+block
+block.Number()
+blockInfo
+admin.nodeInfo.enode
+eth.blockNumber
+logs
+eth.blockNumber
+var blockNumber;
+var blockInfo;
+web3.eth.getBlockNumber(function(e, r) { blockNumber = r; });
+var blockNumber;
+var blockInfo;
+web3.eth.getBlockNumber(function(e, r) { blockNumber = r; });
+blockinfo
+blockInfo
+web3.eth.getBlock(blockNumber, function(e, r) { blockInfo = r; });
+eth.block
+eth.blockNumber
+eth.getBlock(5607)
+eth.getBlock(5608)
+eth.getBlock(5662)
+eth.getBlock(5661)
+eth.getBlock(5709)
