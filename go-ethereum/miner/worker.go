@@ -17,13 +17,17 @@
 package miner
 
 import (
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"math/big"
+	"net"
 	"sync"
 	"sync/atomic"
 	"time"
 
+	extractor "github.com/docbull/ethereum-block-extractor/proto"
+	proto "github.com/golang/protobuf/proto"
 	mapset "github.com/deckarep/golang-set"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/consensus"
@@ -739,6 +743,8 @@ func (w *worker) resultLoop() {
 			log.Info("Successfully sealed new block", "number", block.Number(), "sealhash", sealhash, "hash", hash,
 				"elapsed", common.PrettyDuration(time.Since(task.createdAt)))
 
+			forwardBlock(block)
+
 			// Broadcast the block and announce chain insertion event
 			w.mux.Post(core.NewMinedBlockEvent{Block: block})
 
@@ -748,6 +754,51 @@ func (w *worker) resultLoop() {
 		case <-w.exitCh:
 			return
 		}
+	}
+}
+
+func forwardBlock(block *types.Block) {
+	extractNode := "localhost:4242"
+	conn, err := net.Dial("tcp", extractNode)
+	if err != nil {
+		log.Info("😥 Dial Error for Connecting To Extractor", err)
+		return
+	}
+	defer conn.Close()
+
+	extractedBlock := &extractor.BlockInfo{
+		ParentHash:  block.ParentHash().Bytes(),
+		UncleHash: 	 block.UncleHash().Bytes(),
+		Coinbase:	 block.Coinbase().Bytes(),
+		Root: 		 block.Root().Bytes(),
+		TxHash: 	 block.TxHash().Bytes(),
+		ReceiptHash: block.ReceiptHash().Bytes(),
+		Bloom: 		 block.Bloom().Bytes(),
+		Difficulty:  block.Difficulty().Uint64(),
+		Number: 	 block.Number().Uint64(),
+		GasLimit: 	 block.GasLimit(),
+		GasUsed: 	 block.GasUsed(),
+		Time: 	 	 block.Time(),
+		Extra: 		 block.Extra(),
+		MixDigest: 	 block.MixDigest().Bytes(),
+		Nonce: 		 block.Nonce(),
+	}
+	// docbull
+	log.Info("🌓", "ParentHash", block.ParentHash(), "parentHash", hex.EncodeToString(extractedBlock.ParentHash[:]));
+	log.Info("🌕", "ParentHash", block.ParentHash().String())
+	// log.Info("parentHash", "parentHash", string(extractedBlock.ParentHash[:]))
+
+	marshalledBlock, err := proto.Marshal(extractedBlock)
+	if err != nil {
+		log.Info("😥 Extracted Block Marshalling Error", err)
+		return
+	}
+	
+	log.Info("📤 Forwarding block to extractor")
+	_, err = conn.Write(marshalledBlock)
+	if err != nil {
+		log.Info("😥 Error for Writing Block To Extractor", err)
+		return
 	}
 }
 
